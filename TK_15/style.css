@@ -1,0 +1,81 @@
+*{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+font-family: Helvetica Now Display;
+}
+    
+html,
+body {
+width: 100%;
+height: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(4, 4, 36);
+}
+.main{
+    height: 600px;
+    width: 400px;
+    border-radius: 7px;
+    background-color: #fff;
+    position: relative;
+}
+.storys{
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.otherstory{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background:linear-gradient(45deg,#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D);
+    border-radius: 50%;
+    margin-right: 7px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    object-fit: cover;
+    border-radius: 50%;   
+}
+.full{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+}
+.full h2{
+    color: aliceblue;
+    padding: 10px;
+}
+.full h3{
+    color: rgba(247, 255, 255, 0.58);
+    padding: 10px;
+    margin-top: -20px;
+}
+.full .progress{
+    height: 7px;
+    width: 95%;
+    margin: 10px ;
+    background-color:rgba(247, 255, 255, 0.929);
+    margin-top: 10px;
+    border-radius: 30px;
+}
+.full .growth{
+    height: 100%;
+    width: 0;
+    border-radius: 30px;
+    background-color: black;
+}
